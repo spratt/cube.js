@@ -90,5 +90,13 @@
 	return this;
     };
 
+    Cube.prototype.F2 = Cube.prototype.F2inv = function() {
+	return this.F().F();
+    };
+
+    Cube.prototype.Finv = function() {
+	return this.F2().F();
+    };
+
     global.Cube = Cube;
 })(this);
